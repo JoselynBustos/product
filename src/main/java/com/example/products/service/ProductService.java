@@ -39,7 +39,7 @@ public class ProductService {
         return repo.save(product);
     }
 
-    public Optional<Product> update(Long id, Product product, Long idCategory) {
+    public Product update(Long id, Product product, Long idCategory) {
 
         Product productBd = repo.findById(id).orElseThrow(
                 () -> new ResourceNotFoundException("Product not found with id:" + id));
@@ -52,7 +52,7 @@ public class ProductService {
         productBd.setPrice((double) product.getPrice());
         productBd.setStock(product.getStock());
         productBd.setCategory(category);
-        return Optional.of(repo.save(productBd));
+        return repo.save(productBd);
     }
 
     public boolean delete(long id) {

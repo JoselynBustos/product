@@ -1,0 +1,10 @@
+package com.example.products.exception;
+
+
+public class OutOfStockException extends RuntimeException {
+    public OutOfStockException(String message) {
+        super(message);
+    }
+}
+
+

@@ -20,7 +20,6 @@ public class Category {
         this.name = name;
     }
 
-    // Getters and setters
     public Long getId() {
         return id;
     }

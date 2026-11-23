@@ -25,6 +25,7 @@ public class CategoryController {
 
     private final CategoryRepository categoryRepository;
 
+    
     public CategoryController(CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
     }
@@ -58,6 +59,4 @@ public class CategoryController {
     }
  
     
-    
-
 }
